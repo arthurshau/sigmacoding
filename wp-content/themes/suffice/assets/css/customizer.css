@@ -1,0 +1,135 @@
+.suffice-kirki-seperator {
+	margin: 45px 0 15px;
+	display: block;
+	position: relative;
+	font-size: 18px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	border-bottom: 1px solid #ccc;
+}
+
+.suffice-kirki-seperator::before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	background: #00baf4;
+	bottom: -1px;
+}
+
+/* Theme Instructions Panel CSS */
+li#accordion-section-suffice_important_links h3.accordion-section-title {
+	background-color: #00baf4 !important;
+	color: #fff !important;
+}
+
+li#accordion-section-suffice_important_links h3.accordion-section-title:focus {
+	background-color: #00baf4 !important;
+	color: #fff !important;
+}
+
+li#accordion-section-suffice_important_links h3.accordion-section-title:hover {
+	background-color: #00c2ff !important;
+	color: #fff !important;
+}
+
+li#accordion-section-suffice_important_links h3.accordion-section-title::after {
+	color: #fff !important;
+}
+
+/* Upsell button CSS */
+#sub-accordion-section-suffice_important_links a {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8fc800+0,8fc800+100;Green+Flat+%232 */
+	background: #00baf4;
+	color: #fff;
+	display: block;
+	margin: 15px 0 0;
+	padding: 5px 0;
+	text-align: center;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 8px 0;
+}
+
+#sub-accordion-section-suffice_important_links a:hover {
+	color: #ffffff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
+	background: #00c2ff;
+}
+
+#sub-accordion-panel-suffice_theme_options li.accordion-section .accordion-section-title::before {
+	content: "";
+	font-family: 'dashicons';
+	padding-right: 10px;
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_top_header .accordion-section-title::before {
+	content: "\f489";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_header .accordion-section-title::before {
+	content: "\f489";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_transparent_header .accordion-section-title::before {
+	content: "\f489";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_main_menu .accordion-section-title::before {
+	content: "\f333";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_layout .accordion-section-title::before {
+	content: "\f535";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_colors .accordion-section-title::before {
+	content: "\f100";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_preloader .accordion-section-title::before {
+	content: "\f531";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_pagetitle_bar .accordion-section-title::before {
+	content: "\f201";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_breadcrumbs .accordion-section-title::before {
+	content: "\f345";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_footer .accordion-section-title::before {
+	content: "\f479";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_sidebar .accordion-section-title::before {
+	content: "\f538";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_widget .accordion-section-title::before {
+	content: "\f478";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_blog .accordion-section-title::before {
+	content: "\f119";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_cat_color .accordion-section-title::before {
+	content: "\f323";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_search .accordion-section-title::before {
+	content: "\f179";
+}
+
+#sub-accordion-panel-suffice_theme_options li#accordion-section-suffice_section_related_posts .accordion-section-title::before {
+	content: "\f133";
+}
+
+#accordion-panel-suffice_theme_options .accordion-section-title::before {
+	content: '\f107';
+	font-family: 'dashicons';
+	padding-right: 5px;
+}

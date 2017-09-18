@@ -1,0 +1,116 @@
+#flipping-card::after {
+
+	display: block;
+
+	content: '';
+
+	clear: both;
+
+}
+
+#flipping-cards img.remove, #flipping-card img.remove, #flipping-card li img.thumbnail {
+
+	cursor: pointer;
+
+}
+
+.flipping-card {
+	display: inline-block;
+	width: 300px;
+	padding: 10px;
+	background: #ddd;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#flipping-card li img.thumbnail {
+
+	height: 100%;
+
+}
+
+
+
+#flipping-card li {
+
+	float: left;
+
+	position: relative;
+
+	height: 200px;
+
+	padding: 10px;
+
+}
+
+
+
+#flipping-card li.opened, #flipping-card li .form_edit_fc_img {
+
+	background: #ccc;
+
+}
+
+
+
+#flipping-card li .form_edit_fc_img {
+
+	padding: 10px;
+
+	z-index: 100;
+
+	display: none;
+
+	position: absolute;
+
+	top: 210px;
+
+	left: 0;
+
+}
+
+
+
+#flipping-card li img.loading {
+
+	display: none;
+
+}
+
+
+
+#form_new_fc label, .flipping-card form label {
+
+	display: inline-block;
+
+	width: 70px;
+
+	vertical-align: top;
+
+}
+
+
+
+#form_new_fc input[type=text], #form_new_fc textarea {
+
+	width: 200px;
+
+}
+
+
+
+.form_edit_fc_img label {
+
+	display: block;
+
+	width: 100%;
+
+}
+
+
+
+.form_edit_fc_img input[type=text], .form_edit_fc_img textarea {
+
+	width: 100%;
+
+}

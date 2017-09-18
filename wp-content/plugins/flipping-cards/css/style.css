@@ -1,0 +1,59 @@
+div.flipping-card::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+div.flipping-card-image {
+	float: left;
+	position: relative;
+	background: #333;
+}
+
+div.flipping-card-image img {
+	width: 100% !important;
+	height: 100% !important;
+	transform-style: preserve-3d;
+  	transition: all 0.5s linear;
+  	backface-visibility: hidden;
+}
+
+div.flipping-card-image:hover img {
+	transform: rotateY(180deg);
+}
+
+div.flipping-card-image h2 {
+	padding: 2%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 350px;
+	width: 98%;
+	height: 98%;
+	opacity: 0;
+	transform: rotateY(180deg);
+	transition: all 0.5s linear;
+	font-size: 30px;
+	color: #fff;
+}
+
+div.flipping-card-image:hover h2 {
+	transform: rotateY(0deg);
+	opacity: 1;
+}
+
+div.flipping-card-image h2 span {
+	line-height: normal;
+	vertical-align:middle;
+	display: inline-block;
+}
+
+div.flipping-card-image h2 span ul {
+	text-align: left;
+}
+
+div.flipping-card-image h2 span ul li {
+	line-height: 26px;
+}

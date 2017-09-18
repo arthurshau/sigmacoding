@@ -1,0 +1,184 @@
+# Translation of Plugins - WP Mail SMTP - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - WP Mail SMTP - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-04-14 19:57:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - WP Mail SMTP - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.callum-macdonald.com/"
+msgstr "http://www.callum-macdonald.com/"
+
+#. Author of the plugin/theme
+msgid "Callum Macdonald"
+msgstr "Callum Macdonald"
+
+#. Description of the plugin/theme
+msgid "Reconfigures the wp_mail() function to use SMTP instead of mail() and creates an options page to manage the settings."
+msgstr "Reconfigura a função wp_mail() para usar SMTP no lugar de mail() e cria uma página de opções para gerenciar as configurações."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.callum-macdonald.com/code/wp-mail-smtp/"
+msgstr "http://www.callum-macdonald.com/code/wp-mail-smtp/"
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Mail-SMTP"
+msgstr "WP-Mail-SMTP"
+
+#: wp_mail_smtp.php:413
+msgid "Settings"
+msgstr "Configurações"
+
+#: wp_mail_smtp.php:343
+msgid "Email"
+msgstr "E-mail"
+
+#: wp_mail_smtp.php:323
+msgid "Type an email address here and then click Send Test to generate a test email."
+msgstr "Digite o endereço de email aqui e clique em Enviar Teste para gerar um email de teste."
+
+#: wp_mail_smtp.php:321
+msgid "To:"
+msgstr "Para:"
+
+#: wp_mail_smtp.php:315
+msgid "Send a Test Email"
+msgstr "Enviar um e-mail de teste"
+
+#: wp_mail_smtp.php:309
+msgid "Save Changes"
+msgstr "Salvar mudanças"
+
+#: wp_mail_smtp.php:304
+msgid "Password"
+msgstr "Senha"
+
+#: wp_mail_smtp.php:300
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: wp_mail_smtp.php:296
+msgid "If this is set to no, the values below are ignored."
+msgstr "Se \"não\" estiver marcado, os valores abaixo são ignorados."
+
+#: wp_mail_smtp.php:295
+msgid "Yes: Use SMTP authentication."
+msgstr "Sim: usar autenticação SMTP."
+
+#: wp_mail_smtp.php:293
+msgid "No: Do not use SMTP authentication."
+msgstr "Não: não usar autenticação SMTP."
+
+#: wp_mail_smtp.php:290
+msgid "Authentication"
+msgstr "Autenticação"
+
+#: wp_mail_smtp.php:286
+msgid "Use TLS encryption. This is not the same as STARTTLS. For most servers SSL is the recommended option."
+msgstr "Usar criptografia TLS. Não é o mesmo que STARTTLS. Para a maioria dos servidores SSL esta é a opção recomendada."
+
+#: wp_mail_smtp.php:284
+msgid "Use SSL encryption."
+msgstr "Usar criptografia SSL."
+
+#: wp_mail_smtp.php:282
+msgid "No encryption."
+msgstr "Sem criptografia."
+
+#: wp_mail_smtp.php:279 wp_mail_smtp.php:280
+msgid "Encryption"
+msgstr "Criptografia"
+
+#: wp_mail_smtp.php:275
+msgid "SMTP Port"
+msgstr "Porta SMTP"
+
+#: wp_mail_smtp.php:271
+msgid "SMTP Host"
+msgstr "Host do SMTP"
+
+#: wp_mail_smtp.php:267
+msgid "These options only apply if you have chosen to send mail by SMTP above."
+msgstr "Estas opções só são aplicáveis se você escolheu enviar por SMTP."
+
+#: wp_mail_smtp.php:266
+msgid "SMTP Options"
+msgstr "Opções de SMTP"
+
+#: wp_mail_smtp.php:261
+msgid "Set the return-path to match the From Email"
+msgstr "Configura o endereço de retorno para corresponder ao E-mail do remetente"
+
+#: wp_mail_smtp.php:258 wp_mail_smtp.php:259
+msgid "Return Path"
+msgstr "Endereço de retorno (return-path)"
+
+#: wp_mail_smtp.php:250
+msgid "Use the PHP mail() function to send emails."
+msgstr "Usar a função PHP mail() para enviar os e-mails."
+
+#: wp_mail_smtp.php:248
+msgid "Send all WordPress emails via SMTP."
+msgstr "Enviar todos os e-mails do WordPress via SMTP."
+
+#: wp_mail_smtp.php:245 wp_mail_smtp.php:246
+msgid "Mailer"
+msgstr "Mailer"
+
+#: wp_mail_smtp.php:238
+msgid "You can specify the name that emails should be sent from. If you leave this blank, the emails will be sent from WordPress."
+msgstr "Você pode especificar o nome do remetente dos e-mails. Se você deixar em branco, os e-mails serão enviador com o nome \"WordPress\"."
+
+#: wp_mail_smtp.php:236
+msgid "From Name"
+msgstr "Nome do remetente"
+
+#: wp_mail_smtp.php:233
+msgid "<strong>Please Note:</strong> You appear to be using a version of WordPress prior to 2.3. Please ignore the From Name field and instead enter Name&lt;email@domain.com&gt; in this field."
+msgstr "<strong>Atenção:</strong> Você parece estar usando uma versão do WordPress anterior à 2.3. Por favor ignore o campo nome do remetente e, ao invés, digite Nome&lt;email@dominio.com&gt; neste campo."
+
+#: wp_mail_smtp.php:233
+msgid "You can specify the email address that emails should be sent from. If you leave this blank, the default email will be used."
+msgstr "Você pode especificar o endereço que deve ser usado como remetente. Se você deixar em branco, o e-mail padrão será usado."
+
+#: wp_mail_smtp.php:231
+msgid "From Email"
+msgstr "E-mail do remetente"
+
+#: wp_mail_smtp.php:225 wp_mail_smtp.php:343
+msgid "Advanced Email Options"
+msgstr "Opções avançadas de e-mail"
+
+#: wp_mail_smtp.php:213
+msgid "The SMTP debugging output is shown below:"
+msgstr "Saída de depuração do SMTP:"
+
+#: wp_mail_smtp.php:211
+msgid "The full debugging output is shown below:"
+msgstr "Saída completa da depuração:"
+
+#: wp_mail_smtp.php:209
+msgid "The result was:"
+msgstr "O resultado foi:"
+
+#: wp_mail_smtp.php:208
+msgid "Test Message Sent"
+msgstr "Mensagem de teste enviada"
+
+#: wp_mail_smtp.php:188
+msgid "This is a test email generated by the WP Mail SMTP WordPress plugin."
+msgstr "Este é um e-mail de teste gerado pelo plugin WP Mail SMTP."
+
+#: wp_mail_smtp.php:187
+msgid "Test mail to "
+msgstr "E-mail de teste para"
+
+#: wp_mail_smtp.php:181 wp_mail_smtp.php:326
+msgid "Send Test"
+msgstr "Enviar teste"

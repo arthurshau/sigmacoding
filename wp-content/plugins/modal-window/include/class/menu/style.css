@@ -1,0 +1,74 @@
+.wow-plugin-action-buttons {
+	text-align:right;
+}
+.wow-plugin-action-buttons li {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.wow-button-con {
+	padding-right: 15px;
+}
+
+.wow-button-install {
+	background: none repeat scroll 0% 0% #2EA2CC !important;
+	border-color: #0074A2 !important;
+	box-shadow: 0px 1px 0px rgba(120, 200, 230, 0.5) inset, 0px 1px 0px rgba(0, 0, 0, 0.15) !important;
+	color: #FFF !important;
+}
+
+.wow-button-install:focus {
+	box-shadow: 0px 0px 0px 1px #5B9DD9, 0px 0px 2px 1px rgba(30, 140, 190, 0.8) !important;
+}
+
+.wow-button-install:hover {
+	color: #FFF !important;
+	background: none repeat scroll 0% 0% #5B9DD9 !important;
+}
+
+.wow-button-update {
+	background: none repeat scroll 0% 0% #E74F34 !important;
+	border-color: #C52F2F !important;
+	box-shadow: 0px 1px 0px rgba(255, 235, 235, 0.5) inset, 0px 1px 0px rgba(0, 0, 0, 0.15) !important;
+	color: #FFF !important;
+}
+
+.wow-button-update:focus {
+	box-shadow: 0px 0px 0px 1px #DA3232, 0px 0px 2px 1px rgba(255, 140, 140, 0.8) !important;
+}
+
+.wow-button-update:hover {
+	color: #FFF !important;
+	background: none repeat scroll 0% 0% #DA3232 !important;
+}
+
+
+.button-pro {
+	vertical-align: top;
+	display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin: 0;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	color: #fff !important;
+	background: #37c781;
+}
+
+.button-pro:hover {
+	background: #303030;
+}
+.button-pro:active {
+	background: #303030;
+}

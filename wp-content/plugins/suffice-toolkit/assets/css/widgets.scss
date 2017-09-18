@@ -1,0 +1,359 @@
+/**
+ * widgets.scss
+ * Styles applied to Widgets Page.
+ */
+
+/**
+ * Imports
+ */
+@import "bourbon";
+@import 'mixins';
+@import 'variables';
+@import 'select2';
+
+/**
+ * Styling begins
+ */
+ul.tg-widget-repeater-field-items {
+
+	li.tg-widget-accordion-item {
+		margin: 0 auto;
+		position: relative;
+		box-sizing: border-box;
+
+		.accordion-title,
+		.accordion-inside {
+			border: 1px solid #e5e5e5;
+			border-top: none;
+		}
+
+		.accordion-top {
+			cursor: move;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 1.4em;
+			background: #fafafa;
+
+			.accordion-title {
+
+				h3 {
+					margin: 0;
+					padding: 10px;
+					font-size: 1em;
+					line-height: 1;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					@include user-select();
+				}
+
+				.in-accordion-title {
+					color: #666;
+				}
+			}
+
+			.accordion-title-action {
+				float: right;
+				padding: 0 8px;
+				cursor: pointer;
+				position: relative;
+
+				a.accordion-action {
+					color: #555;
+					outline: none;
+					display: block;
+					box-shadow: none;
+					text-decoration: none;
+
+					&:after {
+						@include icon_dashicons( "\f140" );
+						font-size: 20px;
+						line-height: 1.7em;
+						position: relative;
+					}
+				}
+			}
+		}
+
+		.accordion-inside {
+			display: none;
+			padding: 1px 15px 15px;
+
+			.accordion-control-actions a {
+				box-shadow: none;
+
+				&.accordion-control-remove {
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+		}
+
+		&.open {
+			.accordion-top {
+				.accordion-title {
+					box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.04 );
+				}
+
+				.accordion-title-action {
+					a.accordion-action:after {
+						content: "\f142";
+					}
+				}
+			}
+
+			.accordion-inside {
+				display: block;
+			}
+		}
+
+		&:first-child {
+			.accordion-title {
+				border-top: 1px solid #e5e5e5;
+			}
+		}
+	}
+
+	li.tg-widget-sortable-placeholder {
+		margin: 0;
+		width: 100%;
+		height: 35px;
+		box-sizing: border-box;
+		border: 1px dashed #b4b9be;
+	}
+
+	li.tg-widget-repeater-field-blank-state {
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		padding: 2.5em 7.5%;
+		background: #fafafa;
+		border: 1px solid #e5e5e5;
+
+		.tg-widget-repeater-field-BlankState-message {
+			color: #aaa;
+			margin: 0 auto 1.5em;
+			line-height: 1.5em;
+			font-size: 1.2em;
+			max-width: 500px;
+
+			&::before {
+				content: '\f456';
+				font-family: dashicons;
+				color: #ddd;
+				font-size: 4em;
+				display: block;
+				position: relative !important;
+				top: auto;
+				left: auto;
+				line-height: 1em;
+				margin: 0 0 0.1875em;
+			}
+		}
+
+		.tg-widget-repeater-field-BlankState-cta {
+			font-size: 1.2em;
+			padding: 0.5em 1.5em;
+			height: auto;
+		}
+	}
+}
+
+.tg-widget-repeater-field-button {
+	.tg-widget-repeater-field-add {
+		width: 100%;
+		margin: 3px 0 0;
+		text-align: center;
+	}
+}
+
+#tg-widget-image-uploader {
+
+	.tg-media-preview {
+		display: none;
+		height: auto;
+		margin-top: 10px;
+		border: 1px solid #ddd;
+		padding: 4px;
+		position: relative;
+
+		&:hover {
+			.tg-media-remove {
+				opacity: 1;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.tg-media-remove {
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		background: rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+		color: #fff;
+		border: none;
+		opacity: 0.6;
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.6);
+		}
+
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+}
+
+/**
+ * Custom Sidebar
+ */
+.suffice-toolkit-add-sidebar {
+	padding: 10px;
+	max-width: 900px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0, 1px 0, 0, rgba(0, 0, 0, 0.04);
+
+	input[type='text'] {
+		max-width: 25em;
+		margin: 0 0 15px;
+		padding: 5px 10px;
+		line-height: 19px;
+		vertical-align: top;
+	}
+}
+
+.suffice-toolkit-delete-sidebar {
+	color: #aaa;
+	z-index: 100;
+	@include position(absolute, 12px 45px null null);
+
+	&::before {
+		@include iconbeforedashicons( '\f158' );
+		font-size: 20px;
+		margin-right: 0;
+	}
+
+	&:hover {
+		color: #d54e21;
+		cursor: pointer;
+	}
+}
+
+/**
+ * Select2
+ */
+.select2-dropdown {
+	z-index: 999999 !important;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	padding: 3px 5px;
+}
+.select2-container {
+	line-height: 1.25em;
+	font-size: 14px;
+}
+.widget-content {
+	.select2-container {
+		margin-bottom: 1em;
+	}
+}
+.select2-results .fa {
+	float: right;
+	position: relative;
+	line-height: 20px;
+}
+.select2-results__option {
+   margin-bottom: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+   line-height: 23px;
+}
+/**
+ * Tabs
+ */
+.suffice-toolkit-tab {
+	display: none;
+}
+#suffice-tab-1 {
+	display: block;
+}
+
+/**
+ * Radio Image
+ */
+.suffice-radio-image .suffice-radio-image-options label > input{
+	visibility: hidden; /* Makes input not-clickable */
+	position: absolute; /* Remove input from document flow */
+}
+.suffice-radio-image .suffice-radio-image-options label > input + img{
+	cursor:pointer;
+	border:2px solid transparent;
+}
+.suffice-radio-image .suffice-radio-image-options label > input:checked + img{
+	border:2px solid #99e9f2;
+}
+
+.suffice-tab-title-container {
+	border: 1px solid #e5e5e5;
+	background: #f5f5f5;
+
+	.suffice-tab-title {
+		padding: 10px;
+		display: inline-block;
+		text-decoration: none;
+		color: #252525;
+
+		&.active {
+			background: #fff;
+			transform: translateY(1px);
+		}
+	}
+}
+
+.suffice-toolkit-tab {
+	label {
+		font-weight: 500;
+		line-height: 2;
+	}
+
+	.suffice-radio-image {
+		.suffice-radio-image-options {
+			display: block;
+		}
+	}
+}
+
+
+.suffice-toolkit-tab {
+	.suffice-toolkit-tab-inner {
+		.st-widget-col {
+			display: inline-block;
+			width: 100%;
+
+			&.col-half {
+				width: 50%;
+				margin-right: -2px;
+			}
+		}
+
+		.wp-picker-container {
+			display: block;
+		}
+	}
+}

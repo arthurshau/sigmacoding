@@ -1,0 +1,91 @@
+.wow-modal-overlay{
+	top: 0; 
+	 right: 0; 
+	 bottom: 0; 
+	 left: 0; 
+	 z-index: 99999; 
+	 background-color: rgba(0, 0, 0, 0.7); 
+	 position: fixed; 
+	 cursor: default; 
+	 display: none; 
+	 width: 100%; 
+	 height: 100%; 
+	 overflow: auto;
+}
+.wow-modal-overclose{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	z-index: 99999; 
+	cursor: default;		
+	width: 100%; 
+	height: 100%;
+}
+
+.wow-modal-window{
+	padding:10px; 
+	border: 0px solid #000000; 
+	z-index:99999; 
+	position: fixed; 
+	top:10%;	
+	left:0%;
+	right:0%;
+	border-radius:5px; 
+	margin: auto; 
+	display: none;	
+	background: #ffffff;
+}
+.wow_modal_button_left {
+	display:block;
+	left:-4px;
+	top:54%;
+	position:fixed;	
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: left top 0;
+	-moz-transform-origin: left top 0;
+	-o-transform-origin: left top 0;
+	-moz-transform-origin: left top 0;
+	transform-origin: left top 0;
+	text-align:center;
+}
+.wow_modal_button_right {
+	display:block;
+	right:-4px;
+	top:50%;
+	position:fixed;	
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: right top 0;
+	-moz-transform-origin: right top 0;
+	-o-transform-origin: right top 0;
+	-moz-transform-origin: right top 0;
+	transform-origin: right top 0;
+	text-align:center;
+}
+.wow_modal_button_top {
+	display:block;
+	top:-4px;
+	left:46%;
+	position:fixed;	
+	text-align:center;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
+.wow_modal_button_bottom {
+	display:block;
+	bottom:-4px;
+	position:fixed;	
+	text-align:center;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
